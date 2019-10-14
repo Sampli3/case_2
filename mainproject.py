@@ -28,7 +28,7 @@ print()
 name_month = lc.TXT_MONTHS
 print(lc.TXT_INCOME_PER_MONTH)
 
-annual_income_all = 0                                                  # Annual income with no annual tax deductions
+annual_income_all = 0                                                             # Annual income with no annual tax deductions
 for month in range(12):
     print('{} {}:'.format(lc.TXT_QUESTION, name_month[month], '?', end=''))
     income = float(input())
@@ -37,12 +37,12 @@ print(lc.TXT_ALL, annual_income_all)
 
 print(lc.TXT_NV)
 nv = float(input())
-annual_income = annual_income_all - nv                                  # Annual income with tax deductions
+annual_income = annual_income_all - nv                                             # Annual income with tax deductions
 
 if annual_income > 0:
     if annual_income >= dt.first_stage_2:                                          # Interest of the 1st stage.
         income_1 = dt.first_stage_2 * 0.1
-    else:                                                                   # Interest if income is in the 1st stage.
+    else:                                                                          # Interest if income is in the 1st stage.
         income_1 = annual_income * 0.1
 
     if annual_income > dt.second_stage_2:                                          # Interest of the 2nd stage.
