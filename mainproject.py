@@ -11,7 +11,7 @@ import local as lc
 
 print(lc.TXT_INTRO_1, lc.TXT_INTRO_2, sep='\n')
 print()
-print(lc.TXT_SUBJECT, end=' ')
+print(lc.TXT_SUBJECT)
 
 subject_t = str(input()).lower()
 if subject_t == lc.TXT_SUBJECT_1:
@@ -23,6 +23,7 @@ elif subject_t == lc.TXT_SUBJECT_3:
 else:
     print(lc.TXT_ELSE)
 
+print()
 print(lc.TXT_INCOME_PER_MONTH)
 salary_1m = float(input(lc.TXT_1ST_MONTH))                                  # Subject salary for the 1st month.
 salary_2m = float(input(lc.TXT_2ND_MONTH))                                  # Subject salary for the 2nd month.
@@ -89,7 +90,7 @@ if income > 0:
         income_7 = 0
 
     tax = income_1 + income_2 + income_3 + income_4 + income_5 + income_6 + income_7  # Total amount of taxes.
-    print(':.1f'.format(tax))
+    print(lc.TXT_TAX_SUM, '{:.1f}'.format(tax), lc.TXT_RUB)
 
 else:
     print(lc.TXT_ERROR)
