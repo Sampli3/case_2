@@ -1,8 +1,8 @@
 # Case 2.
 
-# Developers : Moiseenko V. (%),
-#              Torgasheva A. (%),
-#              Setskov M. (%).
+# Developers : Moiseenko V. (35%),
+#              Torgasheva A. (37%),
+#              Setskov M. (40%).
 
 # This program allows to calculate annual tax of the subject of taxation on American system.
 # The taxable amount of money changes depending on the particular taxation.
